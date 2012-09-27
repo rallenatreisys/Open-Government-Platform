@@ -1,0 +1,11 @@
+name = Community Content Views
+description = Configuration of OG Content view provided by og. Includes additional displays for each content type.
+core = 7.x
+package = Datagov
+version = 7.x-1.2
+project = community_content_views
+dependencies[] = ctools
+dependencies[] = og
+dependencies[] = views
+features[ctools][] = views:views_default:3.0
+features[features_api][] = api:1
