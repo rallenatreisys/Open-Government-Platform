@@ -120,11 +120,6 @@ dependencies[] = datagov_home_page
 dependencies[] = datagov_menus
 dependencies[] = datagov_panel_page
 dependencies[] = datagov_slideshow
-dependencies[] = metric_views
-; REI Module
-dependencies[] = fusionmap_display
-; Statistics
-dependencies[] = googleanalytics
 ; Media
 dependencies[] = imce
 dependencies[] = imce_mkdir
@@ -161,8 +156,6 @@ dependencies[] = rules_scheduler
 dependencies[] = rules
 ; Services
 dependencies[] = services
-; USASearch
-dependencies[] = usasearch
 ; UUID
 dependencies[] = uuid
 ; Services - resources
@@ -175,32 +168,19 @@ dependencies[] = views_slideshow
 dependencies[] = views_slideshow_cycle
 dependencies[] = views_ui
 dependencies[] = views
-; Datagov custom
-dependencies[] = views_external_database
 ; Workbench
 dependencies[] = workbench
 dependencies[] = workbench_moderation
-; XML sitemap
-dependencies[] = xmlsitemap_menu
-dependencies[] = xmlsitemap_node
-dependencies[] = xmlsitemap_taxonomy
-dependencies[] = xmlsitemap
-dependencies[] = xmlsitemap_engines
 ; Features
 dependencies[] = features
-
 ; Variables
-
 variables[additional_settings__active_tab_announcements] = 'edit-submission'
 variables[additional_settings__active_tab_applications] = 'edit-group'
-variables[additional_settings__active_tab_blog] = 'edit-xmlsitemap'
-variables[additional_settings__active_tab_challenge] = 'edit-xmlsitemap'
 variables[additional_settings__active_tab_community] = 'edit-menu'
 variables[additional_settings__active_tab_fusion_map] = 'edit-display'
 variables[additional_settings__active_tab_open_datasite_reference] = 'edit-submission'
 variables[additional_settings__active_tab_page] = 'edit-comment'
 variables[additional_settings__active_tab_panel] = 'edit-group'
-variables[additional_settings__active_tab_webform] = 'edit-xmlsitemap'
 variables[addthis_508_compliant] = 1
 variables[addthis_block_widget_type] = 'addthis_basic_button'
 variables[addthis_bookmark_url] = 'http://www.addthis.com/bookmark.php?v=250'
@@ -696,18 +676,6 @@ variables[date_api_version] = '7.2'
 variables[date_default_timezone] = 'America/New_York'
 variables[dblog_row_limit] = '1000'
 variables[default_nodes_main] = '10'
-variables[drupal_css_cache_files][823ba1006db72809515d2221cd02ec1075d7b49b0c07f49307b3a7930bfdd9e4] = 'public://css/css__9zsakYbWSOTLroLLtWO9P7zLJXhXtSJo2OgXN4wIrU.css'
-variables[drupal_css_cache_files][0f74d09dcfd53776bed31a692436e0435d373d085ebd1f08c3d9a44d7aaf55f5] = 'public://css/css_vFuyn5e2Co7a9AMEXbFdBNMdk0ltYtuiEtvIpdZm8xg.css'
-variables[drupal_css_cache_files][f415bf9586a90275cb7a024fd1a9a980790f7daddad884e06634fd8489067a0e] = 'public://css/css_OoiSvBWYOODGJ6dNIzZxeMPC4_Dj6HZU9wJxrmwNVQI.css'
-variables[drupal_css_cache_files][bf867e75c2248be208c6949c72d76d601310e0a133bc46238e51a19b6d3e91fb] = 'public://css/css_CJJ7vgP7IN_rudk8kZB8YNU7rnQWyb3GMVqsORO1NE0.css'
-variables[drupal_css_cache_files][ebb3f433ad4107b1ac31e9d7de0f9a5d399040e9f82b6364211dcfaadea158c0] = 'public://css/css_ABmXGW3jlpNaBRmWVTJUFNYGbVFnilqYg_EngwXFiNc.css'
-variables[drupal_js_cache_files][f2f72bd54c0d8d26057b3c9b9bb91b2f4546026343ebe78acc67bdd58752fc3e] = 'public://js/js_13GTgX0eqAI49IlC0Na2jv1QaAjc_XFBt_eUZ1sY4ms.js'
-variables[drupal_js_cache_files][eab1df4c73af1454f0c701a61e7116ce54bd616bbe19fe5f2a227a88fbca904b] = 'public://js/js_JgUZhkZ6eaimGImMaguY0oJP6shItpgDSUui1Xazmjs.js'
-variables[drupal_js_cache_files][eb3899401457875a075def5b4111a76037e3d376a8bdacad45f6cbb110e24807] = 'public://js/js_f_gOlnl-fIGDmOHtDy0_pSOXTgjPLIRzgFYEA8I4wgk.js'
-variables[drupal_js_cache_files][920c1857a2449bf798c5bd8c82766285664b4d8364c479e375f872f1f2031f94] = 'public://js/js_UiDPnKVJ85twqZaF1aM7X5A2yFNw1kdrRWTx2fybIsQ.js'
-variables[drupal_js_cache_files][ce3d1d2b4cb1654d264c7cd791530955fdfad11ed253fafb280972ee63ac97aa] = 'public://js/js_5n0ppyzxeanpO0TbxlqhzEl8-RqKczh_xDuAbK2B4Kw.js'
-variables[drupal_js_cache_files][28f01ca041cbdc7d0948c263bd6e15ff08e7ebb7498537c5a90d983d77e73590] = 'public://js/js_r3tT8oZMdaw2qA0YEkzKPvMtC-F6TAvC1foiAoRaSZQ.js'
-variables[drupal_js_cache_files][4ae9a95afa43ece34b1efb2f7cad7f62e2eb64479f41ef7d66bc6e7147a8966a] = 'public://js/js_vNfk0E4QpZNmnRYJCe6E7LXYcNSNtAJmZCBP8gL0YD0.js'
 variables[enable_revisions_page_announcements] = 1
 variables[enable_revisions_page_applications] = 1
 variables[enable_revisions_page_blog] = 1
@@ -773,7 +741,6 @@ variables[field_bundle_settings_field_collection_item__field_tool_information][e
 variables[field_bundle_settings_node__announcements][extra_fields][form][title][weight] = '-5'
 variables[field_bundle_settings_node__announcements][extra_fields][form][path][weight] = '30'
 variables[field_bundle_settings_node__announcements][extra_fields][form][redirect][weight] = '30'
-variables[field_bundle_settings_node__announcements][extra_fields][form][xmlsitemap][weight] = '30'
 variables[field_bundle_settings_node__applications][view_modes][teaser][custom_settings] = true
 variables[field_bundle_settings_node__applications][view_modes][full][custom_settings] = false
 variables[field_bundle_settings_node__applications][view_modes][rss][custom_settings] = false
@@ -783,25 +750,20 @@ variables[field_bundle_settings_node__applications][view_modes][token][custom_se
 variables[field_bundle_settings_node__applications][extra_fields][form][title][weight] = '0'
 variables[field_bundle_settings_node__applications][extra_fields][form][path][weight] = '7'
 variables[field_bundle_settings_node__applications][extra_fields][form][redirect][weight] = '8'
-variables[field_bundle_settings_node__applications][extra_fields][form][xmlsitemap][weight] = '9'
 variables[field_bundle_settings_node__blog][extra_fields][form][title][weight] = '0'
 variables[field_bundle_settings_node__blog][extra_fields][form][path][weight] = '7'
 variables[field_bundle_settings_node__blog][extra_fields][form][redirect][weight] = '6'
-variables[field_bundle_settings_node__blog][extra_fields][form][xmlsitemap][weight] = '5'
 variables[field_bundle_settings_node__challenge][extra_fields][form][title][weight] = '0'
 variables[field_bundle_settings_node__challenge][extra_fields][form][path][weight] = '10'
 variables[field_bundle_settings_node__challenge][extra_fields][form][redirect][weight] = '9'
-variables[field_bundle_settings_node__challenge][extra_fields][form][xmlsitemap][weight] = '8'
 variables[field_bundle_settings_node__community][extra_fields][form][title][weight] = '-5'
 variables[field_bundle_settings_node__community][extra_fields][form][og_menu][weight] = '0'
 variables[field_bundle_settings_node__community][extra_fields][form][path][weight] = '30'
 variables[field_bundle_settings_node__community][extra_fields][form][redirect][weight] = '30'
-variables[field_bundle_settings_node__community][extra_fields][form][xmlsitemap][weight] = '30'
 variables[field_bundle_settings_node__data][extra_fields][form][title][weight] = '0'
 variables[field_bundle_settings_node__data][extra_fields][form][og_menu][weight] = '13'
 variables[field_bundle_settings_node__data][extra_fields][form][path][weight] = '10'
 variables[field_bundle_settings_node__data][extra_fields][form][redirect][weight] = '9'
-variables[field_bundle_settings_node__data][extra_fields][form][xmlsitemap][weight] = '8'
 variables[field_bundle_settings_node__fusion_map][view_modes][teaser][custom_settings] = true
 variables[field_bundle_settings_node__fusion_map][view_modes][full][custom_settings] = false
 variables[field_bundle_settings_node__fusion_map][view_modes][rss][custom_settings] = false
@@ -811,7 +773,6 @@ variables[field_bundle_settings_node__fusion_map][view_modes][token][custom_sett
 variables[field_bundle_settings_node__fusion_map][extra_fields][form][title][weight] = '0'
 variables[field_bundle_settings_node__fusion_map][extra_fields][form][path][weight] = '6'
 variables[field_bundle_settings_node__fusion_map][extra_fields][form][redirect][weight] = '5'
-variables[field_bundle_settings_node__fusion_map][extra_fields][form][xmlsitemap][weight] = '4'
 variables[field_bundle_settings_node__open_datasite_reference][view_modes][full][custom_settings] = true
 variables[field_bundle_settings_node__open_datasite_reference][view_modes][teaser][custom_settings] = true
 variables[field_bundle_settings_node__open_datasite_reference][view_modes][rss][custom_settings] = false
@@ -821,7 +782,6 @@ variables[field_bundle_settings_node__open_datasite_reference][view_modes][token
 variables[field_bundle_settings_node__open_datasite_reference][extra_fields][form][title][weight] = '0'
 variables[field_bundle_settings_node__open_datasite_reference][extra_fields][form][path][weight] = '7'
 variables[field_bundle_settings_node__open_datasite_reference][extra_fields][form][redirect][weight] = '6'
-variables[field_bundle_settings_node__open_datasite_reference][extra_fields][form][xmlsitemap][weight] = '5'
 variables[field_bundle_settings_node__page][view_modes][teaser][custom_settings] = true
 variables[field_bundle_settings_node__page][view_modes][rss][custom_settings] = true
 variables[field_bundle_settings_node__page][view_modes][full][custom_settings] = false
@@ -831,7 +791,6 @@ variables[field_bundle_settings_node__page][view_modes][token][custom_settings] 
 variables[field_bundle_settings_node__page][extra_fields][form][title][weight] = '0'
 variables[field_bundle_settings_node__page][extra_fields][form][path][weight] = '3'
 variables[field_bundle_settings_node__page][extra_fields][form][redirect][weight] = '4'
-variables[field_bundle_settings_node__page][extra_fields][form][xmlsitemap][weight] = '5'
 variables[field_bundle_settings_node__panel][view_modes][teaser][custom_settings] = true
 variables[field_bundle_settings_node__panel][view_modes][full][custom_settings] = false
 variables[field_bundle_settings_node__panel][view_modes][rss][custom_settings] = false
@@ -841,63 +800,18 @@ variables[field_bundle_settings_node__panel][view_modes][token][custom_settings]
 variables[field_bundle_settings_node__panel][extra_fields][form][title][weight] = '0'
 variables[field_bundle_settings_node__panel][extra_fields][form][path][weight] = '3'
 variables[field_bundle_settings_node__panel][extra_fields][form][redirect][weight] = '4'
-variables[field_bundle_settings_node__panel][extra_fields][form][xmlsitemap][weight] = '2'
 variables[field_bundle_settings_node__slide][extra_fields][form][title][weight] = '0'
 variables[field_bundle_settings_node__slide][extra_fields][form][path][weight] = '4'
 variables[field_bundle_settings_node__slide][extra_fields][form][redirect][weight] = '5'
-variables[field_bundle_settings_node__slide][extra_fields][form][xmlsitemap][weight] = '6'
 variables[field_bundle_settings_node__tool][extra_fields][form][title][weight] = '0'
 variables[field_bundle_settings_node__tool][extra_fields][form][path][weight] = '8'
 variables[field_bundle_settings_node__tool][extra_fields][form][redirect][weight] = '7'
-variables[field_bundle_settings_node__tool][extra_fields][form][xmlsitemap][weight] = '6'
 variables[filter_fallback_format] = 'plain_text'
 variables[forum_nav_vocabulary] = '6'
 variables[fusion_apply_skin_fusion_skins_grid16_width_status][bartik] = 0
 variables[fusion_apply_skin_fusion_skins_grid16_width_status][datagov] = 0
 variables[fusion_apply_skin_fusion_skins_grid16_width_status][fusion_core] = 0
 variables[geo_data_access_point] = 'http://geo.data.gov:8080/geoportal/csw'
-variables[googleanalytics_account] = 'UA-17367410-17'
-variables[googleanalytics_custom] = '0'
-variables[googleanalytics_custom_var][slots][1][slot] = 1
-variables[googleanalytics_custom_var][slots][1][name] = ''
-variables[googleanalytics_custom_var][slots][1][value] = ''
-variables[googleanalytics_custom_var][slots][1][scope] = '3'
-variables[googleanalytics_custom_var][slots][2][slot] = 2
-variables[googleanalytics_custom_var][slots][2][name] = ''
-variables[googleanalytics_custom_var][slots][2][value] = ''
-variables[googleanalytics_custom_var][slots][2][scope] = '3'
-variables[googleanalytics_custom_var][slots][3][slot] = 3
-variables[googleanalytics_custom_var][slots][3][name] = ''
-variables[googleanalytics_custom_var][slots][3][value] = ''
-variables[googleanalytics_custom_var][slots][3][scope] = '3'
-variables[googleanalytics_custom_var][slots][4][slot] = 4
-variables[googleanalytics_custom_var][slots][4][name] = ''
-variables[googleanalytics_custom_var][slots][4][value] = ''
-variables[googleanalytics_custom_var][slots][4][scope] = '3'
-variables[googleanalytics_custom_var][slots][5][slot] = 5
-variables[googleanalytics_custom_var][slots][5][name] = ''
-variables[googleanalytics_custom_var][slots][5][value] = ''
-variables[googleanalytics_custom_var][slots][5][scope] = '3'
-variables[googleanalytics_domain_mode] = '0'
-variables[googleanalytics_js_scope] = 'header'
-variables[googleanalytics_pages] = 'admin
-admin/*
-batch
-node/add*
-node/*/*
-user/*/*'
-variables[googleanalytics_privacy_donottrack] = 1
-variables[googleanalytics_roles][1] = 0
-variables[googleanalytics_roles][2] = 0
-variables[googleanalytics_roles][3] = 0
-variables[googleanalytics_roles][4] = 0
-variables[googleanalytics_roles][5] = 0
-variables[googleanalytics_trackfiles] = 1
-variables[googleanalytics_trackfiles_extensions] = '7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip'
-variables[googleanalytics_trackmailto] = 1
-variables[googleanalytics_trackoutbound] = 1
-variables[googleanalytics_visibility_pages] = '0'
-variables[googleanalytics_visibility_roles] = '0'
 variables[image_toolkit] = 'gd'
 variables[imce_custom_content][imce_mkdir_content] = 1
 variables[imce_custom_process][imce_mkdir_process_profile] = 1
@@ -1282,11 +1196,6 @@ variables[theme_datagov_settings][sidebar_phone_landscape_mquery] = 'only screen
 variables[theme_datagov_settings][general_settings__active_tab] = 'edit-theme-grid-config'
 variables[theme_default] = 'bartik'
 variables[tracking__active_tab] = 'edit-domain-tracking'
-variables[usasearch_action_domain] = 'search.usa.gov'
-variables[usasearch_affiliate_name] = 'datagov'
-variables[usasearch_api_key] = 'af205449b08e731fa6a8efcf8ad9caf1'
-variables[usasearch_discovery_tag] = 1
-variables[usasearch_search_page] = 1
 variables[user_register] = 2
 variables[variable_module_list][variable_advanced][0] = 'page_cache_invoke_hooks'
 variables[variable_module_list][variable_advanced][1] = 'actions_max_stack'
@@ -1311,60 +1220,3 @@ variables[workbench_moderation_default_state_panel] = 'draft'
 variables[workbench_moderation_default_state_slide] = 'draft'
 variables[workbench_moderation_default_state_tool] = 'draft'
 variables[workbench_moderation_default_state_webform] = 'draft'
-variables[xmlsitemap_base_url] = 'http://datagov-dev-www.reisys.com'
-variables[xmlsitemap_batch_limit] = '100'
-variables[xmlsitemap_chunk_size] = 'auto'
-variables[xmlsitemap_engines_engines][0] = 'bing'
-variables[xmlsitemap_engines_engines][1] = 'google'
-variables[xmlsitemap_engines_minimum_lifetime] = '86400'
-variables[xmlsitemap_engines_submit_last] = 1344557961
-variables[xmlsitemap_engines_submit_updated] = 1
-variables[xmlsitemap_frontpage_changefreq] = '86400'
-variables[xmlsitemap_frontpage_priority] = '1.0'
-variables[xmlsitemap_generated_last] = 1344557961
-variables[xmlsitemap_lastmod_format] = 'Y-m-d\\TH:i\\Z'
-variables[xmlsitemap_minimum_lifetime] = '0'
-variables[xmlsitemap_path] = 'xmlsitemap'
-variables[xmlsitemap_prefetch_aliases] = 1
-variables[xmlsitemap_settings_menu_link_][status] = '0'
-variables[xmlsitemap_settings_menu_link_][priority] = '0.5'
-variables[xmlsitemap_settings_menu_link_main-menu][status] = '1'
-variables[xmlsitemap_settings_menu_link_main-menu][priority] = '0.5'
-variables[xmlsitemap_settings_menu_link_menu-footer-menu][status] = '1'
-variables[xmlsitemap_settings_menu_link_menu-footer-menu][priority] = '0.5'
-variables[xmlsitemap_settings_menu_link_menu-metric-tabs][status] = '1'
-variables[xmlsitemap_settings_menu_link_menu-metric-tabs][priority] = '0.4'
-variables[xmlsitemap_settings_node_announcements][status] = '1'
-variables[xmlsitemap_settings_node_announcements][priority] = '0.5'
-variables[xmlsitemap_settings_node_applications][status] = '0'
-variables[xmlsitemap_settings_node_applications][priority] = '0.5'
-variables[xmlsitemap_settings_node_blog][status] = '1'
-variables[xmlsitemap_settings_node_blog][priority] = '0.5'
-variables[xmlsitemap_settings_node_challenge][status] = '1'
-variables[xmlsitemap_settings_node_challenge][priority] = '0.5'
-variables[xmlsitemap_settings_node_community][status] = '1'
-variables[xmlsitemap_settings_node_community][priority] = '0.5'
-variables[xmlsitemap_settings_node_faq][status] = '0'
-variables[xmlsitemap_settings_node_faq][priority] = '0.5'
-variables[xmlsitemap_settings_node_fusion_map][status] = '0'
-variables[xmlsitemap_settings_node_fusion_map][priority] = '0.5'
-variables[xmlsitemap_settings_node_open_datasite_reference][status] = '0'
-variables[xmlsitemap_settings_node_open_datasite_reference][priority] = '0.5'
-variables[xmlsitemap_settings_node_page][status] = '1'
-variables[xmlsitemap_settings_node_page][priority] = '0.5'
-variables[xmlsitemap_settings_node_panel][status] = '1'
-variables[xmlsitemap_settings_node_panel][priority] = '0.5'
-variables[xmlsitemap_settings_node_slide][status] = '0'
-variables[xmlsitemap_settings_node_slide][priority] = '0.5'
-variables[xmlsitemap_settings_node_tool][status] = '1'
-variables[xmlsitemap_settings_node_tool][priority] = '0.5'
-variables[xmlsitemap_settings_node_webform][status] = '1'
-variables[xmlsitemap_settings_node_webform][priority] = '0.5'
-variables[xmlsitemap_settings_taxonomy_term_application_categories][status] = '0'
-variables[xmlsitemap_settings_taxonomy_term_application_categories][priority] = '0.5'
-variables[xmlsitemap_settings_taxonomy_term_application_types][status] = '0'
-variables[xmlsitemap_settings_taxonomy_term_application_types][priority] = '0.5'
-variables[xmlsitemap_settings_taxonomy_term_open_datasites_groupings][status] = '0'
-variables[xmlsitemap_settings_taxonomy_term_open_datasites_groupings][priority] = '0.5'
-variables[xmlsitemap_settings__active_tab] = 'edit-taxonomy-term'
-variables[xmlsitemap_xsl] = 1
