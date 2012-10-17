@@ -24,7 +24,6 @@ dependencies[] = token
 dependencies[] = token_filter
 dependencies[] = pathauto
 dependencies[] = minimal
-dependencies[] = fast_404
 dependencies[] = redirect
 dependencies[] = autologout
 ; Core
@@ -1083,7 +1082,6 @@ variables[site_map_show_menus][user-menu] = 0
 variables[site_map_show_rss_links] = '1'
 variables[site_map_show_vocabularies][1] = '1'
 variables[site_map_term_threshold] = '0'
-variables[site_name] = 'datagovdev.local'
 variables[statistics_day_timestamp] = 1348752307
 variables[superfish_arrow_1] = 1
 variables[superfish_arrow_2] = 1
