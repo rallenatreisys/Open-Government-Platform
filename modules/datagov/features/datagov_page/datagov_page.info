@@ -35,4 +35,3 @@ features[variable][] = node_options_page
 features[variable][] = node_preview_page
 features[variable][] = node_submitted_page
 features[variable][] = workbench_moderation_default_state_page
-spaces[types] = all

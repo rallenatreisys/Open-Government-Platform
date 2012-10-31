@@ -52,6 +52,12 @@ function datagov_data_field_default_fields() {
           'type' => 'text_default',
           'weight' => 2,
         ),
+        'notifications' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'teaser' => array(
           'label' => 'hidden',
           'module' => 'text',
@@ -126,6 +132,12 @@ function datagov_data_field_default_fields() {
           'type' => 'text_default',
           'weight' => 11,
         ),
+        'notifications' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'teaser' => array(
           'label' => 'above',
           'settings' => array(),
@@ -195,6 +207,12 @@ function datagov_data_field_default_fields() {
           'type' => 'text_default',
           'weight' => 19,
         ),
+        'notifications' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'teaser' => array(
           'label' => 'above',
           'settings' => array(),
@@ -205,7 +223,7 @@ function datagov_data_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'field_categorization',
       'label' => 'Category',
-      'required' => 1,
+      'required' => 0,
       'settings' => array(
         'text_processing' => '0',
         'user_register_form' => FALSE,
@@ -217,19 +235,19 @@ function datagov_data_field_default_fields() {
           'size' => '60',
         ),
         'type' => 'text_textfield',
-        'weight' => '1',
+        'weight' => '2',
       ),
     ),
   );
 
-  // Exported field: 'node-data-field_dataset_title'.
-  $fields['node-data-field_dataset_title'] = array(
+  // Exported field: 'node-data-field_dataset_id'.
+  $fields['node-data-field_dataset_id'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_dataset_title',
+      'field_name' => 'field_dataset_id',
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -262,7 +280,13 @@ function datagov_data_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => 17,
+          'weight' => 21,
+        ),
+        'notifications' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
         ),
         'teaser' => array(
           'label' => 'above',
@@ -272,9 +296,9 @@ function datagov_data_field_default_fields() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_dataset_title',
-      'label' => 'Dataset Title',
-      'required' => 0,
+      'field_name' => 'field_dataset_id',
+      'label' => 'Dataset ID',
+      'required' => 1,
       'settings' => array(
         'text_processing' => '0',
         'user_register_form' => FALSE,
@@ -286,7 +310,7 @@ function datagov_data_field_default_fields() {
           'size' => '60',
         ),
         'type' => 'text_textfield',
-        'weight' => '4',
+        'weight' => '0',
       ),
     ),
   );
@@ -337,6 +361,12 @@ function datagov_data_field_default_fields() {
           'settings' => array(),
           'type' => 'taxonomy_term_reference_link',
           'weight' => 20,
+        ),
+        'notifications' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
         ),
         'teaser' => array(
           'label' => 'above',
@@ -410,6 +440,12 @@ function datagov_data_field_default_fields() {
           'type' => 'image',
           'weight' => 6,
         ),
+        'notifications' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'teaser' => array(
           'label' => 'above',
           'settings' => array(),
@@ -440,7 +476,7 @@ function datagov_data_field_default_fields() {
           'progress_indicator' => 'throbber',
         ),
         'type' => 'image_image',
-        'weight' => '3',
+        'weight' => '4',
       ),
     ),
   );
@@ -487,6 +523,12 @@ function datagov_data_field_default_fields() {
           'type' => 'og_list_default',
           'weight' => 1,
         ),
+        'notifications' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
         'teaser' => array(
           'label' => 'above',
           'settings' => array(),
@@ -520,7 +562,7 @@ function datagov_data_field_default_fields() {
           'opt_group' => 'auto',
         ),
         'type' => 'group_audience',
-        'weight' => '2',
+        'weight' => '3',
       ),
       'widget_type' => 'group_audience',
     ),
@@ -531,7 +573,7 @@ function datagov_data_field_default_fields() {
   t('Agency');
   t('Category');
   t('Dataset Description');
-  t('Dataset Title');
+  t('Dataset ID');
   t('Dataset Vocabulary');
   t('Groups audience');
   t('If this dataset is featured, it must have a thumbnail.');

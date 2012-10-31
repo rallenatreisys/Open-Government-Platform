@@ -40,4 +40,3 @@ features[box][] = whatsnew_newest_datasets
 features[ctools][] = boxes:box:1
 features[features_api][] = api:1
 features[filter][] = php_code
-spaces[types] = all

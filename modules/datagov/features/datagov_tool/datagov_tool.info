@@ -40,4 +40,3 @@ features[variable][] = show_diff_inline_tool
 features[variable][] = show_preview_changes_tool
 features[variable][] = workbench_moderation_default_state_tool
 features[variable][] = xmlsitemap_settings_node_tool
-spaces[types] = all

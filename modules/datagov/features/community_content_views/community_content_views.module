@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the Community Content Views feature.
- */
-
-include_once 'community_content_views.features.inc';

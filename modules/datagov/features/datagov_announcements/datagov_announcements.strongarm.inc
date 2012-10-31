@@ -62,9 +62,35 @@ function datagov_announcements_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'enable_revisions_page_announcements';
+  $strongarm->value = 1;
+  $export['enable_revisions_page_announcements'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'field_bundle_settings_node__announcements';
   $strongarm->value = array(
-    'view_modes' => array(),
+    'view_modes' => array(
+      'teaser' => array(
+        'custom_settings' => TRUE,
+      ),
+      'full' => array(
+        'custom_settings' => FALSE,
+      ),
+      'rss' => array(
+        'custom_settings' => FALSE,
+      ),
+      'search_index' => array(
+        'custom_settings' => FALSE,
+      ),
+      'search_result' => array(
+        'custom_settings' => FALSE,
+      ),
+      'token' => array(
+        'custom_settings' => FALSE,
+      ),
+    ),
     'extra_fields' => array(
       'form' => array(
         'title' => array(
@@ -140,6 +166,35 @@ function datagov_announcements_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'panelizer_defaults_node_announcements';
+  $strongarm->value = array(
+    'status' => 1,
+    'default' => 0,
+    'choice' => 1,
+  );
+  $export['panelizer_defaults_node_announcements'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'panelizer_defaults_taxonomy_term_announcements_and_news';
+  $strongarm->value = array(
+    'status' => 0,
+    'default' => 0,
+    'choice' => 0,
+  );
+  $export['panelizer_defaults_taxonomy_term_announcements_and_news'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_node_announcements_pattern';
+  $strongarm->value = 'announcements/[node:title]';
+  $export['pathauto_node_announcements_pattern'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'pathauto_taxonomy_term_announcements_and_news_pattern';
   $strongarm->value = '';
   $export['pathauto_taxonomy_term_announcements_and_news_pattern'] = $strongarm;
@@ -150,6 +205,16 @@ function datagov_announcements_strongarm() {
   $strongarm->name = 'workbench_moderation_default_state_announcements';
   $strongarm->value = 'draft';
   $export['workbench_moderation_default_state_announcements'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'xmlsitemap_settings_node_announcements';
+  $strongarm->value = array(
+    'status' => '1',
+    'priority' => '0.5',
+  );
+  $export['xmlsitemap_settings_node_announcements'] = $strongarm;
 
   return $export;
 }

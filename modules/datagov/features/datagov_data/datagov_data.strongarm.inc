@@ -68,7 +68,7 @@ function datagov_data_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'title' => array(
-          'weight' => '0',
+          'weight' => '1',
         ),
         'og_menu' => array(
           'weight' => '13',
@@ -125,7 +125,7 @@ function datagov_data_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'node_submitted_data';
-  $strongarm->value = 1;
+  $strongarm->value = 0;
   $export['node_submitted_data'] = $strongarm;
 
   return $export;

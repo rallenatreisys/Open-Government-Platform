@@ -104,13 +104,13 @@ function datagov_developer_apps_gallery_strongarm() {
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '7',
+          'weight' => '12',
         ),
         'redirect' => array(
-          'weight' => '8',
+          'weight' => '13',
         ),
         'xmlsitemap' => array(
-          'weight' => '9',
+          'weight' => '14',
         ),
       ),
       'display' => array(),
@@ -166,6 +166,50 @@ function datagov_developer_apps_gallery_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'panelizer_defaults_node_applications';
+  $strongarm->value = array(
+    'status' => 1,
+    'default' => 0,
+    'choice' => 1,
+  );
+  $export['panelizer_defaults_node_applications'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'panelizer_defaults_taxonomy_term_application_categories';
+  $strongarm->value = array(
+    'status' => 0,
+    'default' => 0,
+    'choice' => 0,
+  );
+  $export['panelizer_defaults_taxonomy_term_application_categories'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'panelizer_defaults_taxonomy_term_application_types';
+  $strongarm->value = array(
+    'status' => 0,
+    'default' => 0,
+    'choice' => 0,
+  );
+  $export['panelizer_defaults_taxonomy_term_application_types'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'panelizer_defaults_taxonomy_term_legacy_datacomm_application_categories';
+  $strongarm->value = array(
+    'status' => 0,
+    'default' => 0,
+    'choice' => 0,
+  );
+  $export['panelizer_defaults_taxonomy_term_legacy_datacomm_application_categories'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'pathauto_node_applications_pattern';
   $strongarm->value = 'applications/[node:title]';
   $export['pathauto_node_applications_pattern'] = $strongarm;
@@ -183,6 +227,13 @@ function datagov_developer_apps_gallery_strongarm() {
   $strongarm->name = 'pathauto_taxonomy_term_application_types_pattern';
   $strongarm->value = '';
   $export['pathauto_taxonomy_term_application_types_pattern'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_taxonomy_term_legacy_datacomm_application_categories_pattern';
+  $strongarm->value = '';
+  $export['pathauto_taxonomy_term_legacy_datacomm_application_categories_pattern'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
